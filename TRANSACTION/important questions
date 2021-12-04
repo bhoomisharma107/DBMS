@@ -1,0 +1,140 @@
+1) In the …………, one transaction inserts a row in the table while the other transaction is halfway through its browsing of the table.
+A. transaction read a problem
+B. one way read a problem
+C. serial read problem
+D. phantom read problem
+2) Transaction processing is associated with everything below except.
+A. producing detail, summary, or exception reports
+B. recording a business activity
+C. confirming an action or triggering a response
+D. maintaining data
+
+3) ………. helps solve the concurrency problem.
+A. locking
+B. transaction monitor
+C. transaction serializability
+D. two-phase commit
+
+
+4) If a transaction acquires a shared lock, then it can perform ………. operation.
+A. read
+B. write
+C. read and write
+D. update
+5) If a transaction obtains a shared lock on a row, it means that the transaction wants to ….. that row.
+A. write
+B. insert
+C. execute
+D. read
+
+6) The node where the distributed transaction originates is called the …….
+A. local coordinator
+B. starting coordinator
+C. global coordinator
+D. originating node
+
+7) If a transaction obtains an exclusive lock on a row, it means that the transaction wants to ……. that row.
+A. select
+B. update
+C. view
+D. read
+
+
+8) If a transaction acquires an exclusive lock, then it can perform ………. operation.
+A. read
+B. write
+C. read and write
+D. update
+9) …….. is a specific concurrency problem wherein two transactions depend on each other for something.
+A. phantom read problem
+B. transaction read a problem
+C. deadlock
+D. locking
+
+10) If a database server is referenced in a distributed transaction, the value of its commit point strength determines which role it plays in the ………
+A. two-phase commit
+B. two-phase locking
+C. transaction locking
+D. checkpoints
+
+11) Transaction ………. ensures that the transaction is being executed successfully.
+A. concurrency
+B. consistency
+C. serializability
+D. non-serialiasability
+
+
+12) The situation in which a transaction holds a data item and waits for the release of data item held by some other transaction, which in turn waits for another transaction, is called …….
+A. serializable schedule
+B. process waiting
+C. concurrency
+D. deadlock
+13) ………… protocol grantees that a set of transactions becomes serializable.
+A. two-phase locking
+B. two-phase commit
+C. transaction locking
+D. checkpoints
+
+14) The global coordinator forgets about the transaction phase is called ………
+A. Prepare phase
+B. Commit phase
+C. Forget phase
+D. Global phase
+
+15) In two-phase commit, ………. coordinates the synchronization of the commit or rollback operations.
+A. database manager
+B. central coordinator
+C. participants
+D. concurrency control manager
+
+16) In two-phase locking protocol, a transaction obtains locks in ……..phase.
+A. shrinking phase
+B. growing phase
+C. running phase
+D. initial phase
+
+17) A transaction processing system is also called as ……..
+A. processing monitor
+B. transaction monitor
+C. TP monitor
+D. monitor
+
+18) After the nodes are prepared, the distributed transaction is said to be ……
+A. in-doubt
+B. in-prepared
+C. prepared transaction
+D. in-node
+
+19) In ………., we have many mini transactions within the main transaction.
+A. transaction control
+B. chained transaction
+C. nested transaction
+D. calling transaction
+
+20) In a two-phase locking protocol, a transaction release locks in ……… phase.
+A. shrinking phase
+B. growing phase
+C. running phase
+D. initial phase
+
+ANSWERS:
+1) D. phantom read problem
+2) C. confirming an action or triggering a response
+3) A. locking
+4) A. read
+5) D. read
+6) C. global coordinator
+7) B. update
+8) C. read and write
+9) C. deadlock
+10) A. two-phase commit
+11) C. serializability
+12) D. deadlock
+13) A. two-phase locking
+14) C. Forget phase
+15) B. central coordinator
+16) B. growing phase
+17) C. TP monitor
+18) A. in-doubt
+19) B. chained transaction
+20) A. shrinking phase
