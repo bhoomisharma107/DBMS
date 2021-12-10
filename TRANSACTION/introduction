@@ -1,0 +1,38 @@
+A transaction is an action or series of actions that are being performed by a single user or application program, which reads or updates the contents of the database.
+
+A transaction can be defined as a logical unit of work on the database. This may be an entire program, a piece of a program, or a single command (like the SQL commands such as INSERT or UPDATE), and it may engage in any number of operations on the database. In the database context, the execution of an application program can be thought of as one or more transactions with non-database processing taking place in between.
+
+A simple example of a transaction will be dealing with the bank accounts of two users, let say Karlos and Ray. A simple transaction of moving an amount of 5000 from Karlos to Ray engages many low-level jobs. As the amount of Rs. 5000 gets transferred from the Karlos's account to Ray's account, a series of tasks gets performed in the background of the screen.
+
+
+This straightforward and small transaction includes several steps: decrease Karlos's bank account from 5000:
+
+Open_Acc (Karlos)
+
+OldBal = Karlos.bal
+
+NewBal = OldBal - 5000
+
+Ram.bal = NewBal
+
+CloseAccount(Karlos)
+You can say, the transaction involves many tasks, such as opening the account of Karlos, reading the old balance, decreasing the specific amount of 5000 from that account, saving new balance to an account of Karlos, and finally closing the transaction session.
+
+For adding amount 5000 in Ray's account, the same sort of tasks needs to be done:
+
+
+OpenAccount(Ray)
+
+Old_Bal = Ray.bal
+
+NewBal = OldBal + 1000
+
+Ahmed.bal = NewBal
+
+CloseAccount(B)
+There are properties that all transactions should follow and possess. The four basic are in combination termed as ACID properties. ACID properties and its concepts of a transaction are put forwarded by Haerder and Reuter in the year 1983. The ACID has a full form and is as follows:
+
+Atomicity: The 'all or nothing' property. A transaction is an indivisible entity that is either performed in its entirety or will not get performed at all. This is the responsibility or duty of the recovery subsystem of the DBMS to ensure atomicity.
+Consistency: A transaction must alter the database from one steady-state to another steady state. This is the responsibility of both the DBMS and the application developers to make certain consistency. The DBMS can ensure consistency by putting into effect all the constraints that have been mainly on the database schema such as integrity and enterprise constraints.
+Isolation: Transactions that are executing independently of one another is the primary concept followed by isolation. In other words, the frictional effects of incomplete transactions should not be visible or come into notice to other transactions going on simultaneously. It is the responsibility of the concurrency control sub-system to ensure adapting the isolation.
+Durability: The effects of an accomplished transaction are permanently recorded in the database and must not get lost or vanished due to subsequent failure. So this becomes the responsibility of the recovery sub-system to ensure durability.
