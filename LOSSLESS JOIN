@@ -1,0 +1,61 @@
+Lossless-join decomposition is a process in which a relation is decomposed into two or more relations. This property guarantees that the extra or less tuple generation problem does not occur and no information is lost from the original relation during the decomposition. It is also known as non-additive join decomposition.
+
+When the sub relations combine again then the new relation must be the same as the original relation was before decomposition.
+
+Consider a relation R if we decomposed it into sub-parts relation R1 and relation R2.
+
+The decomposition is lossless when it satisfies the following statement −
+
+If we union the sub Relation R1 and R2 then it must contain all the attributes that are available in the original relation R before decomposition.
+
+Intersections of R1 and R2 cannot be Null. The sub relation must contain a common attribute. The common attribute must contain unique data.
+
+The common attribute must be a super key of sub relations either R1 or R2.
+
+Here,
+
+R = (A, B, C)
+
+R1 = (A, B)
+
+R2 = (B, C)
+
+The relation R has three attributes A, B, and C. The relation R is decomposed into two relation R1 and R2. . R1 and R2 both have 2-2 attributes.The common attributes are B.
+
+The Value in Column B must be unique. if it contains a duplicate value then the Lossless-join decomposition is not possible.
+
+Draw a table of Relation R with Raw Data −
+
+R (A, B, C)
+
+A	B	C
+12	25	34
+10	36	09
+12	42	30
+It decomposes into the two sub relations −
+
+R1 (A, B)
+
+A	B
+12	25
+10	36
+12	42
+R2 (B, C)
+
+B	C
+25	34
+36	09
+42	30
+Now, we can check the first condition for Lossless-join decomposition.
+
+The union of sub relation R1 and R2 is the same as relation R.
+
+R1U R2 = R
+
+We get the following result −
+
+A	B	C
+12	25	34
+10	36	09
+12	42	30
+The relation is the same as the original relation R. Hence, the above decomposition is Lossless-join decomposition.
